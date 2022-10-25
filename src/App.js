@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import AboutPage from "./page/AboutPage";
 import MainPage from "./page/MainPage";
+import Todo from "./page/Todo";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
       <Switch>
         <Route path={'/about'} component={AboutPage}/>
         <Route path={'/main'} component={MainPage}/>
+
+        <Route path={'/todo/*'} component={Todo}/>
+
         <Route path={'/'} component={MainPage}/>
       </Switch>
     </Router>
